@@ -1,0 +1,74 @@
+.flexCols {
+    $root: &;
+
+    &--intro {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        @include breakpoint(1240px) {
+            align-items: center;
+
+            #{$root}__image {
+                margin-top: -80px;
+                padding-right: 32px;
+            }
+
+        }
+
+        #{$root}__column:nth-child(2) {
+            flex: 1 0 52%;
+            position: relative;
+            z-index: 2;
+
+            .title {
+                margin-left: -81px;
+
+                @include breakpoint(1000px) {
+                    margin-left: 0;
+                }
+            }
+
+            @include breakpoint(1000px) {
+                flex: 1 0 100%;
+            }
+        }
+
+        #{$root}__column:first-child {
+            flex: 1 0 48%;
+
+            @include breakpoint(1240px) {
+                align-self: flex-end;
+            }
+
+            @include breakpoint(1000px) {
+                display: none;
+            }
+        }
+    }
+
+    &--contact {
+        display: flex;
+        margin-top: 40px;
+        overflow: hidden;
+
+        @include breakpoint(750px){
+            flex-direction: column;
+        }
+
+        #{$root}__column:first-child {
+            flex: 1 0 54%;
+        }
+
+        #{$root}__column:nth-child(2) {
+            flex: 1 0 46%;
+            padding-left: 36px;
+
+            @include breakpoint(750px){
+                padding-left: 0;
+                margin-top: 30px;
+            }
+        }
+
+    }
+}

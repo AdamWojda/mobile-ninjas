@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="27.562" height="21" viewBox="0 0 27.562 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #86bbc1;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#86bbc1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#675d53" flood-opacity="0.19"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="multiply" in2="solidFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <path d="M25.001,17.985 L25.001,13.026 L22.573,13.026 L22.573,18.003 L20.041,18.003 L20.041,20.465 L14.162,20.465 L14.162,17.985 L20.041,17.985 L20.041,15.506 L7.538,15.506 L7.538,17.985 L12.567,18.003 L12.567,20.483 L7.520,20.483 L7.520,18.020 L4.988,18.020 L4.988,13.008 L2.560,13.008 L2.560,17.968 L0.011,17.968 L0.011,10.459 L2.508,10.459 L2.508,8.048 L4.988,8.048 L4.988,5.499 L7.503,5.499 L7.538,5.499 L7.538,3.002 L10.035,3.002 L10.035,5.506 L17.527,5.527 L17.527,3.002 L20.024,3.002 L20.024,5.534 L22.573,5.534 L22.573,8.014 L25.036,8.014 L25.036,10.494 L27.550,10.494 L27.550,17.985 L25.001,17.985 ZM10.035,7.996 L7.538,7.996 L7.538,10.494 L10.035,10.494 L10.035,7.996 ZM20.024,7.996 L17.527,7.996 L17.527,10.494 L20.024,10.494 L20.024,7.996 ZM4.988,0.504 L7.538,0.504 L7.538,3.002 L4.988,3.002 L4.988,0.504 ZM22.573,0.504 L22.573,3.002 L20.024,3.002 L20.024,0.504 L22.573,0.504 Z" class="cls-1"/>
+</svg>

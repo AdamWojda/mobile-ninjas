@@ -1,0 +1,107 @@
+.newsTicker {
+    $root: &;
+
+    &__elem {
+        border-radius: 5px;
+        background: #fcfcfc url(../img/white-bg.jpg) repeat;
+        margin-bottom: 13px;
+        padding: 10px 14px 20px;
+        border-bottom: 1px solid rgba(0,0,0,.5)
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 7px;
+
+        #{$root}__title {
+            flex: 1 0 70%;
+        }
+    }
+
+    &__time {
+        flex: 1 0 30%;
+        text-align: right;
+    }
+
+    .owl-prev:before {
+        content: "Quicknotes archive:";
+        color: #fff;
+        font-size: 11px;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+        cursor: text;
+        font-weight: 400;
+        font-style: italic;
+        margin-right: 10px;
+    }
+
+    .owl-prev {
+        font-weight: 700;
+        color: #4f7c7e;
+        font-size: 12px;
+        text-shadow: 1px 0px 0px rgba(252,252,252,0.34);
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .owl-next {
+        font-weight: 700;
+        color: #5a9692;
+        font-size: 12px;
+        text-shadow: -1px 0px 0px rgba(252,252,252,0.34);
+        display: inline-block;
+        position: absolute;
+        right: -70%;
+        top: 3px;
+        cursor: pointer;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+        position: relative;
+        counter-increment: slideNum;
+        cursor: pointer;
+    }
+
+    .owl-dot:before {
+        content: counter(slideNum);
+        font-size: 11px;
+        font-family: "Arial";
+        color: #4f7c7e;
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: lowercase;
+        font-variant: small-caps
+    }
+
+    .owl-dot.active:before {
+        color: #fff;
+    }
+
+    .owl-nav {
+        display: inline-block;
+        position: relative;
+        margin-left: 185px;
+        width: 118px;
+        text-align: right;
+        vertical-align: top;
+        margin-top: -2px;
+
+        @include breakpoint(1000px){
+            margin-left: 0;
+        }
+    }
+
+    .owl-dots {
+        display: inline-block;
+        margin-left: 11px;
+        line-height: 1;
+        font-size: 0;
+        position: relative;
+        top: -3px;
+        counter-reset: sections;
+    }
+}

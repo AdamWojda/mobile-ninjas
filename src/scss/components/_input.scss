@@ -1,0 +1,47 @@
+/*
+* @name Input
+* @section Components
+*/
+
+.input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px 12px;
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 16px;
+    border: 1px solid $color-wedgewood;
+    box-shadow: 0px 1px 0px 0px rgba($color-white, 0.15),inset 0px 1px 5px 0px rgba($color-black, 0.33);
+
+    @include placeholder {
+        color: $color-cloud;
+    }
+
+    &--submit {
+        float: right;
+        width: auto;
+        margin-right: 10px;
+        font-size: 30px;
+        font-style: normal;
+        padding: 8px 35px;
+        cursor: pointer;
+        margin-bottom: 0;
+        box-shadow: 0px -1px 0px 0px rgba($color-white, 0.25) inset, 0px 1px 4px 0px rgba($color-black, 0.2);
+
+        @include breakpoint(750px) {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+    }
+
+    &.not-valid {
+        border-color: red;
+        color: red;
+
+        @include placeholder {
+            color: red;
+        }
+    }
+}

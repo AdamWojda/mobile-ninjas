@@ -1,0 +1,229 @@
+/*
+* @name Title
+* @section Components
+*/
+
+.title {
+    color: $color-white;
+    text-shadow: 0px 2px 0px rgba(34, 78, 89, 0.25);
+    text-transform: uppercase;
+
+    &__top {
+        font-size: 71px;
+        @include fluid-type(60px, 71px, 768px, 1240px);
+        display: block;
+        margin-bottom: -9px;
+    }
+
+    &__bottom {
+        font-size: 128px;
+        @include fluid-type(80px, 128px, 768px, 1240px);
+        position: relative;
+        left: -8px;
+        top: 4px;
+
+        @include breakpoint(1000px) {
+            left: 0;
+        }
+    }
+
+    &__description {
+        text-transform: none;
+        margin-left: -6px;
+        max-width: 590px;
+
+
+        @include breakpoint(1000px) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &__bttn {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 55px;
+
+        @include breakpoint(1240px) {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        @include breakpoint(1000px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__text {
+        @include breakpoint(1000px) {
+            text-align: center;
+        }
+    }
+
+    &--smaller &__top {
+        font-size: 43px;
+    }
+
+    &--tiny &__bottom {
+        font-size: 108px;
+        margin-left: 9px;
+                        @include breakpoint(750px) {
+                            font-size: 79px;
+                        }
+    }
+
+    &--tiny &__top {
+        font-size: 30px;
+        margin-bottom: -4px;
+    }
+
+    &--green {
+        color: $color-patina;
+        text-shadow: none;
+
+                @include breakpoint(1024px) {
+                    text-align: center;
+                }
+    }
+
+        &--green &__col {
+
+                @include breakpoint(1024px) {
+                    flex: 1 0 100%;
+
+                    &:nth-child(2) {
+                        flex: 1 0 100%;
+                        align-self: center;
+                    }
+                }
+        }
+    &--arrow &__bttn {
+        padding-right: 160px;
+
+        @include breakpoint(1000px) {
+            padding-right: 0;
+        }
+    }
+
+    &--arrow &__description {
+        position: relative;
+    }
+
+    &--arrow &__description:after {
+        content: '';
+        background: url(../img/button-arrow.png) no-repeat;
+        width: 72px;
+        height: 92px;
+        top: 80%;
+        right: 125px;
+        position: absolute;
+
+        @include breakpoint(1000px) {
+            width: 60px;
+            height: 70px;
+            top: 87%;
+            right: 52px;
+            position: absolute;
+            background-size: contain;
+        }
+
+        @include breakpoint(700px) {
+            display: none;
+        }
+    }
+
+    &--withIcon {
+        text-shadow: none;
+        min-height: 35px;
+        display: flex;
+    }
+
+    &--withIcon &__icon {
+        min-width: 35px;
+        min-height: 35px;
+        flex: 1 0 12%;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+
+        @include breakpoint(580px) {
+            flex: 1 0 3%;
+            justify-content: center;
+        }
+
+    }
+
+    &--withIcon &__text {
+        text-shadow: none;
+        align-self: flex-end;
+        flex: 1 0 88%;
+        text-align: left;
+
+        @include breakpoint(580px) {
+            flex: 1 0 97%;
+            padding-left: 10px;
+        }
+    }
+
+    &--desc--right {
+        display: flex;
+            @include breakpoint(1000px) {
+        flex-direction: column;
+    }
+    }
+
+
+
+    &--desc--right &__col {
+        flex: 1 0 50%;
+
+        &:nth-child(2) {
+            flex: 1 0 50%;
+            align-self: flex-end;
+            padding-bottom: 19px;
+        }
+            @include breakpoint(1000px) {
+                flex: 1 0 100%;
+
+                &:nth-child(2) {
+                    flex: 1 0 100%;
+                    align-self: center;
+                }
+            }
+
+    }
+
+    &--desc--small &__top {
+        font-size: 43px;
+        margin-bottom: -4px;
+    }
+
+    &--desc--small &__bottom {
+        left: 0;
+        font-size: 88px;
+                        @include breakpoint(750px) {
+                            font-size: 79px;
+                        }
+    }
+
+    &--desc--small &__col {
+        flex: 1 0 57%;
+
+        &:nth-child(2) {
+            flex: 1 0 43%;
+            align-self: flex-end;
+            padding-bottom: 0;
+        }
+
+
+            @include breakpoint(1000px) {
+                flex: 1 0 100%;
+
+                &:nth-child(2) {
+                    flex: 1 0 100%;
+                    align-self: center;
+                }
+            }
+    }
+
+}

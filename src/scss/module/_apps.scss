@@ -1,0 +1,68 @@
+.apps {
+    $root: &;
+    margin-top: 26px;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    &__elem {
+        // flex: 1 0 33.33333%;
+        // max-width: 33.33333%;
+        flex: 1 0 100%;
+        max-width: 313px;
+        margin: 0 auto;
+        padding: 0 10px 0 14px;
+
+        &:nth-child(3n+1) {
+            padding-left: 0;
+            padding-right: 22px;
+
+            @include breakpoint(1000px) {
+                padding-right: 0;
+            }
+        }
+
+        &:nth-child(3n+3) {
+            padding-right: 0;
+            padding-left: 26px;
+        }
+
+    }
+
+    .owl {
+        &-nav {
+            display: none;
+        }
+
+        &-dots {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        &-dot {
+            display: inline-block;
+            margin-right: 10px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: red;
+            box-shadow: 0 0 1px 0 #000;
+            background: #f5f1e6 url(../img/white-bg.jpg) repeat;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),inset -0.035px -2px 0px 0px rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            
+            &.active {
+                border-top: 1px solid rgba(0,0,0,0.2);
+                background-color: #E55B58;
+                background-image: none;
+                box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), inset -0.035px 1px 0px 0px rgba(255,255,255,0.2);
+                transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+$space_for_paper_texture: 100px;
+.section {
+
+    &--white {
+        background: $color-white url('../img/white-bg.jpg') repeat;
+        position: relative;
+        padding-bottom: $space_for_paper_texture;
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            max-height: 45px;
+            background: $color-white url('../img/paper.jpg') repeat-x;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &--reverse {
+            padding-top: $space_for_paper_texture;
+
+            &:after {
+                bottom: auto;
+                top: 0;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &--footer {
+        padding: 66px 0 25px;
+    }
+
+    &--intro {
+
+        .container {
+            @include breakpoint(1240px) {
+                padding-top: 80px;
+            }
+
+            @include breakpoint(1000px) {
+                padding-top: 100px;
+            }
+
+            &:after {
+               content: "";
+               @include fill-with-absolute();
+               background: url('../img/introPattern.png') no-repeat 21px 0;
+               z-index: 1;
+            }
+
+        }
+
+    }
+
+    &--apps {
+        padding-top: 28px;
+        padding-bottom: 42px;
+    }
+
+    &--team {
+        padding-top: 42px;
+    }
+
+    &--contact {
+        padding: 30px 0 65px;
+
+        .title--desc--right .title__col:nth-child(2) {
+            padding-bottom: 9px;
+            padding-left: 15px;
+            padding-right: 0;
+            letter-spacing: -.2px;
+        }
+
+        textarea {
+            min-height: 182px;
+        }
+    }
+}

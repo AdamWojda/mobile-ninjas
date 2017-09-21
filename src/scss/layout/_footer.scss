@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+
+    @include breakpoint(750px) {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__col {
+        flex: 1 0 50%;
+
+        @include breakpoint(750px) {
+            flex: 1 0 100%;
+            margin-top: 20px;
+        }
+
+        &--2 {
+            text-align: right;
+
+            @include breakpoint(750px) {
+                text-align: center;
+            }
+
+            img {
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+}

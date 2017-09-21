@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="4" height="8" viewBox="0 0 4 8">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter-chain-1);
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        font-size: 17.48px;
+      }
+
+      .cls-3 {
+        fill: #999;
+        font-family: "Arial-BoldMT";
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .cls-4 {
+        font-family: "bsn_webset";
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-0.017" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.25"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#4f7c7e"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+    </filter>
+  </defs>
+  <text transform="translate(7) rotate(180) scale(0.69 0.69)" class="cls-1"><tspan class="cls-2"><tspan class="cls-3"> </tspan><tspan class="cls-4">d</tspan></tspan></text>
+</svg>

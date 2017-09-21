@@ -1,0 +1,91 @@
+/*
+* @name SVG
+* @section Components
+*/
+
+.svg {
+
+    //Colors
+    &--toolsIcon,
+    &--innovationIcon,
+    &--loveIcon,
+    &--gameIcon,
+    &--phoneIcon  {
+        fill: $color-glacier;
+    }
+
+    &--linkedin {
+        fill: $color-blueDianne;
+    }
+
+    &--facebook {
+        fill: $color-neptune;
+    }
+
+    &--twitter {
+        fill: $color-aquaIsland;
+    }
+
+    &--dribble {
+        fill: $color-wewak;
+    }
+
+    &--forrst {
+        fill: $color-oliveGreen;
+    }
+
+    &--triangle {
+        fill: $color-ecruWhite;
+    }
+
+    //Sizes
+    &--linkedin,
+    &--facebook,
+    &--twitter,
+    &--dribble,
+    &--forrst {
+        width: 21px;
+        height: 21px;
+    }
+
+    &--toolsIcon {
+        width: 26px;
+        height: 27px;
+    }
+
+    &--triangle {
+        width: 32px;
+        height: 20px;
+    }
+
+    &--innovationIcon {
+        width: 26px;
+        height: 36px;
+    }
+
+    &--loveIcon {
+        width: 24px;
+        height: 20px;
+    }
+
+    &--phoneIcon {
+        width: 16px;
+        height: 26px;
+    }
+
+    &--gameIcon {
+        width: 29px;
+        height: 20px;
+    }
+
+    &--appStore {
+        width: 116px;
+        height: 40px;
+    }
+
+    &--googlePlay {
+        width: 116px;
+        height: 40px;
+    }
+
+}

@@ -1,0 +1,41 @@
+.form {
+    $root: &;
+
+    &__captcha {
+        flex: 1 0 70%;
+        max-width: 70%;
+
+        &__element {
+            display: flex;
+            align-items: center;
+
+            .input {
+                flex: 1 0 22%;
+                margin-bottom: 0;
+                max-width: 22%;
+            }
+        }
+
+        &__description {
+            flex: 1 0 78%;
+            padding-left: 10px;
+        }
+    }
+
+    &__submit {
+        flex: 1 0 30%;
+
+        @include breakpoint(750px) {
+            flex: 1 0 100%;
+        }
+    }
+
+    &__footer {
+        display: flex;
+
+        @include breakpoint(750px) {
+            flex-wrap: wrap;
+        }
+    }
+
+}

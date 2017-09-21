@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="25.563" height="26.625" viewBox="0 0 25.563 26.625">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#86bbc1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#675d53" flood-opacity="0.19"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="multiply" in2="solidFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <path d="M25.061,4.749 C26.019,7.063 25.563,9.824 23.682,11.705 C21.611,13.777 18.480,14.099 16.048,12.727 L14.290,14.648 L15.544,15.907 L16.294,15.158 C16.677,14.774 17.299,14.774 17.682,15.158 L23.764,21.301 C24.147,21.685 24.147,22.306 23.764,22.689 L20.987,25.466 C20.604,25.849 19.983,25.849 19.599,25.466 L13.517,19.322 C13.134,18.939 13.134,18.318 13.517,17.934 L14.202,17.249 L13.006,16.051 L4.594,25.240 C3.828,26.007 2.585,26.007 1.818,25.240 L1.124,24.546 C0.357,23.779 0.357,22.536 1.124,21.770 L10.706,13.744 L4.342,7.363 L2.332,7.362 L0.007,3.622 L1.880,1.746 L5.705,4.087 L5.731,6.055 L12.169,12.519 L14.042,10.950 C12.211,8.454 12.402,4.939 14.659,2.682 C16.531,0.810 19.276,0.346 21.583,1.286 L17.457,5.354 L20.928,8.825 L25.061,4.749 ZM3.428,22.748 C3.045,22.365 2.423,22.365 2.040,22.748 C1.657,23.132 1.657,23.753 2.040,24.136 C2.423,24.520 3.045,24.520 3.428,24.136 C3.811,23.753 3.811,23.132 3.428,22.748 Z" class="cls-1"/>
+</svg>

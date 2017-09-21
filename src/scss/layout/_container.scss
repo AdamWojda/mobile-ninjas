@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &--inner {
+        max-width: 979px;
+        max-width: calc(939px + 40px);
+    }
+
+    &--outer {
+        max-width: 1240px;
+        max-width: calc(1200px + 40px);
+    }
+
+    &--small {
+        max-width: 760px;
+    }
+}

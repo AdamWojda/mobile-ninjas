@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="22.063" height="36" viewBox="0 0 22.063 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#86bbc1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#675d53" flood-opacity="0.19"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="multiply" in2="solidFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <path d="M13.981,18.390 L21.960,31.818 C22.388,33.417 21.439,35.060 19.841,35.488 L2.199,35.488 C0.601,35.060 -0.348,33.417 0.080,31.818 L6.991,18.367 L7.006,10.496 L6.524,10.496 C5.696,10.496 5.026,9.826 5.026,8.998 C5.026,8.171 5.696,7.500 6.524,7.500 L14.517,7.500 C15.345,7.500 16.016,8.171 16.016,8.998 C16.016,9.826 15.345,10.496 14.517,10.496 L13.966,10.496 L13.980,18.366 L13.981,18.390 ZM14.517,9.498 C14.793,9.498 15.017,9.274 15.017,8.998 C15.017,8.722 14.793,8.498 14.517,8.498 L13.019,8.498 L8.022,8.498 L6.524,8.498 C6.248,8.498 6.024,8.722 6.024,8.998 C6.024,9.274 6.248,9.498 6.524,9.498 L8.022,9.498 L7.999,18.405 L1.053,32.021 C0.767,33.086 1.400,34.182 2.465,34.467 L19.572,34.486 C20.638,34.200 21.270,33.105 20.985,32.039 L13.046,18.372 L13.019,9.498 L14.517,9.498 ZM19.944,32.319 C20.086,32.852 19.770,33.400 19.237,33.543 L2.740,33.543 C2.207,33.400 1.891,32.852 2.034,32.319 L7.001,22.529 C7.001,22.529 8.500,20.529 10.562,22.529 C12.687,24.654 14.352,22.529 14.352,22.529 L19.944,32.319 ZM13.500,6.000 C13.500,6.552 13.052,7.000 12.500,7.000 C11.948,7.000 11.500,6.552 11.500,6.000 C11.500,5.447 11.948,5.000 12.500,5.000 C13.052,5.000 13.500,5.447 13.500,6.000 ZM12.500,3.500 C11.672,3.500 11.000,2.828 11.000,2.000 C11.000,1.171 11.672,0.500 12.500,0.500 C13.328,0.500 14.000,1.171 14.000,2.000 C14.000,2.828 13.328,3.500 12.500,3.500 ZM8.500,6.000 C7.948,6.000 7.500,5.552 7.500,5.000 C7.500,4.447 7.948,4.000 8.500,4.000 C9.052,4.000 9.500,4.447 9.500,5.000 C9.500,5.552 9.052,6.000 8.500,6.000 Z" class="cls-1"/>
+</svg>

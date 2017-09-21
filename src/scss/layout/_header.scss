@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    transition: all .2s linear;
+    z-index: map-get($depth, header);
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__column {
+
+        &--1 {
+            margin-left: -5px;
+            flex: 1 0 50%;
+
+            @include breakpoint(730px) {
+                flex: 1 0 90%;
+            }
+
+        }
+
+        &--2 {
+            margin-right: -20px;
+            flex: 1 0 50%;
+            text-align: right;
+            padding-top: 19px;
+
+            @include breakpoint(730px) {
+                padding-top: 7px;
+                margin-right: 0;
+                flex: 1 0 10%;
+            }
+
+        }
+        
+    }
+
+    &--active,
+    &--open {
+        background: $color-oliveGreen;
+        padding: 13px 0;
+
+        .logo__link,
+        .navigation__link,
+        .svg {
+            color: $color-white;
+            fill: $color-white;
+        }
+    }
+}

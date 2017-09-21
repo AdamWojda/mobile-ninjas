@@ -1,0 +1,83 @@
+.teamList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 34px;
+
+    @include breakpoint(1024px) {
+        max-width: 620px;
+        margin: 55px auto 0;
+    }
+
+    &__elem {
+        flex: 1 0 40%;
+        margin-bottom: 45px;
+
+        &:nth-child(2n+2) {
+            padding-right: 0;
+            padding-left: 25px;
+
+            @include breakpoint(1024px) {
+                padding-left: 0;
+            }
+
+        }
+
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+
+
+                        @include breakpoint(1024px) {
+                            margin-bottom: 45px;
+                        }
+        }
+
+        &:last-child {
+                    @include breakpoint(1000px) {
+                        margin-bottom: 0;
+                    }
+                }
+
+
+        @include breakpoint(1024px) {
+            flex: 1 0 100%;
+            padding: 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint(700px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__photo {
+        flex: 1 0 39%;
+    }
+
+    &__content {
+        padding-left: 18px;
+        padding-right: 20px;
+
+        @include breakpoint(768px) {
+            margin: 30px 0 20px;
+        }
+
+        .text {
+            text-transform: uppercase;
+        }
+
+        .social {
+            margin-top: 9px;
+        }
+    }
+
+    &__description.text {
+        margin-top: 10px;
+        text-transform: none;
+    }
+}
