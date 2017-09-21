@@ -1,14 +1,14 @@
 {
-  "name": "web-dev-challange-35",
+  "name": "mobile-ninjas",
   "version": "1.0.0",
-  "description": "My solution to weekly web dev challange.\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D latest (35) weekly web dev challange\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D, weekly web dev challange",
+  "description": "Landing Page.\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D latest (35) weekly web dev challange\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D, weekly web dev challange",
   "main": "index.js",
   "scripts": {
     "test": "none"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AdamWojda/35_web_dev_chalange.git"
+    "url": ""
   },
   "keywords": [
     "weekly",
@@ -19,9 +19,9 @@
   "author": "Adam Wojda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AdamWojda/35_web_dev_chalange/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/AdamWojda/35_web_dev_chalange#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.5",
