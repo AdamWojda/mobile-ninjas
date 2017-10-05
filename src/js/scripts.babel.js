@@ -1,5 +1,108 @@
 (function () {
 
+        var navigation = navigation || {};
+
+        navigation.sections = function (element) {
+
+            var _self = this;
+
+            this.speed        = 350;
+            this.disableClass = 'jsDisableScroll';
+            this.element      = element;
+
+            _self.init();
+
+        };
+
+        navigation.sections.prototype.init = function () {
+
+            var _self = this;
+            //
+            // _self.toggle();
+            // _self.selectOption();
+            // $('.cat-arrow').not('.jsDisableScroll').mCustomScrollbar();
+
+        };
+
+        navigation.sections.prototype.toggle = function () {
+
+            var _self = this;
+            //
+            // $('.title-categry, .cat-container', this.element).on('mouseover', function (e) {
+            //     e.preventDefault();
+            //
+            //     if ($(this).hasClass(_self.disableClass)) {
+            //
+            //         if ($(this).find('.cat-arrow').hasClass('active')) {
+            //             $(this).find('.cat-arrow').removeClass('active');
+            //         } else {
+            //             $(this).find('.cat-arrow').addClass('active');
+            //         }
+            //         ;
+            //
+            //     } else {
+            //
+            //         if ($(this).find('.cat-arrow').hasClass('active')) {
+            //             $(this).find('.cat-arrow').removeClass('active');
+            //         } else {
+            //             $(this).find('.cat-arrow').addClass('active');
+            //         }
+            //         ;
+            //
+            //     }
+            //     ;
+            // });
+            //
+            // $('.title-categry', this.element).click(function (e) {
+            //
+            //     if ($(this).next().hasClass('active')) {
+            //         $(this).next().removeClass('active');
+            //     } else {
+            //         $(this).next().addClass('active');
+            //     }
+            //     ;
+            //
+            //     if ($(this).hasClass('active')) {
+            //         $(this).removeClass('active');
+            //     } else {
+            //         $(this).addClass('active');
+            //     }
+            //     ;
+            // });
+            //
+            // $('.FiltersAndProducts__Clear').click(function (e) {
+            //     e.preventDefault();
+            //     $('.checkbox-custom input[type="checkbox"]').attr('checked', false);
+            //     $('.jsProductsGridIsotope').isotope({
+            //         filter: '*'
+            //     });
+            //     $(this).removeClass('enabled');
+            // });
+            //
+            // $('.filters input[type="checkbox"]').change(function () {
+            //     $('.FiltersAndProducts__Clear').addClass('enabled');
+            // });
+
+        };
+
+        navigation.sections.prototype.selectOption = function () {
+
+            var _self = this;
+            //
+            // $('.list-select a', this.element).on('click', function (e) {
+            //     e.preventDefault();
+            //
+            //     var value = $(this).text();
+            //
+            //     $(_self.element).children('a.select').text(value).trigger('click');
+            // });
+
+        };
+
+        var accTabs = new navigation.sections('.section');
+
+
+
     // ---- Module - Scroll to anchor ---- //
     const scrollToAnchor = {
         listContainer: $('[data-scroll-to-anchor]'),
