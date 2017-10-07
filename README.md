@@ -1,5 +1,5 @@
 # MoGo
-## 35 Weekly Web Dev Challange (https://adamwojda.github.io/35_web_dev_challenge/)
+## 35 Weekly Web Dev Challange (https://adamwojda.github.io/mobile-ninjas/)
 
 
 ### Support
